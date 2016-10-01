@@ -8,6 +8,7 @@ A really simple tool to start quickly developing in es2015 and preview in the br
 Please note that this repo hasn't been published to npm yet.
 
 * `git clone git@github.com:msmy/webpack-starter-es2015-react.git`
+* `cd webpack-starter-es2015-react`
 * `npm i`
 
 ## Usage
