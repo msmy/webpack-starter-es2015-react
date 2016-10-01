@@ -1,0 +1,28 @@
+{
+  "name": "webpack-starter-es2015-react",
+  "version": "0.0.1",
+  "description": "Simple webpack startup project for es2015 and react projects",
+  "main": "src/js/app.js",
+  "scripts": {
+    "build": "webpack --progress --bail",
+    "build:watch": "webpack --progress --watch",
+    "start": "npm run build:watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-packages": "ncu -u"
+  },
+  "author": "Malcolm Smy",
+  "license": "MIT",
+  "dependencies": {
+    "npm-check-updates": "^2.8.0",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "browser-sync": "^2.11.1",
+    "browser-sync-webpack-plugin": "^1.1.3",
+    "html-webpack-plugin": "^2.22.0"
+  }
+}
