@@ -13,10 +13,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/,
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                exclude: /node_modules/
             }
         ]
     },
@@ -26,6 +23,8 @@ module.exports = {
                 baseDir: ['dist']
             }
         }),
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            template: 'src/index.html'
+        })
     ]
 };
